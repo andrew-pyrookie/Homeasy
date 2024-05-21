@@ -1,0 +1,14 @@
+.images-column {
+    background-color: black;
+    margin: 0;
+    height: 300px;
+    z-index: -1;
+}
+
+.livingroom,
+.bathroom,
+.bedroom,
+.kitchen {
+    width: 25%;
+    height: 100%;
+}
