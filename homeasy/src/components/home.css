@@ -1,0 +1,192 @@
+/* New Styles for Video Background */
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    color: white;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Send the video to the back */
+}
+
+/* Existing Styles */
+.navbar {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    padding-left: 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+.icon-bars {
+    font-size: 1.5em;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    padding-right: 40px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 200px; /* Adjust the width as needed */
+        height: auto; 
+        background: rgba(0, 0, 0, 0.4);
+        top: 80px;
+        left: -200px; /* Start offscreen */
+        text-align: center;
+        transition: all 0.5s;
+        flex-direction: column;
+        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    nav ul li {
+        margin: 20px 0; /* Increase margin between items */
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover, nav ul li a:active {
+        color: orange;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.home-section {
+    text-align: left;
+    width: 45%;
+    padding-left: 15%;
+    padding-top: 8%;
+}
+
+.home-btn {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    border: none;
+}
+.small-line {
+    height: 2px;
+    width: 25px;
+    background-color: orange;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.tag-name {
+    color: orange;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.home-h2 {
+    font-size: 45px;
+}
+.home.p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .home-section {
+        padding-top: 125px;
+      width: 80%;
+      padding-left: 10%;
+      text-align: center;
+    }
+  
+    .home-h2 {
+      font-size: 35px;
+    }
+  
+    .home-p {
+      font-size: 15px;
+    }
+  }
