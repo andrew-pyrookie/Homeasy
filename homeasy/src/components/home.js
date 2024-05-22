@@ -21,7 +21,7 @@ function Home() {
             <li><a href='#'>Products</a></li>
             <li><a href='#'>About Us</a></li>
             <li><a href='#'>Contact Us</a></li>
-            <li><a href='#' >Cart <TiShoppingCart className='icon'/></a></li>
+            <li><a href='#' ><TiShoppingCart className='icon'/></a></li>
         </ul>
         </nav>
         <section className='home-section'>
