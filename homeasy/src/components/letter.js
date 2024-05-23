@@ -7,8 +7,8 @@ function Newsletter(){
             <div class="container">
                 <div class="image-section"></div>
                 <div class="text-section">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>See the latest collection & get special offer</p>
+                <p className='selling-seller'><span className='selling-line'></span>SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <h2>See the latest collection & get special offer</h2>
                     <form action="#" method="post">
                         <input type="email" placeholder="Email address" required/>
                         <button type="submit">Subscribe</button>

@@ -21,8 +21,8 @@
   }
   
   .testimonial img {
-    width: 100%;
-    border-radius: 50%;
+    height: 250px;
+    width: 150px;
     margin-bottom: 20px;
   }
   

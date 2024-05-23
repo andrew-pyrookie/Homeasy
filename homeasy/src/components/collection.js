@@ -1,6 +1,6 @@
 import React from 'react';
 import './collection.css';
-import './home.css';
+import './LandingPage.css';
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 
