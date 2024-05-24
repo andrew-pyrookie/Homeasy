@@ -41,7 +41,7 @@ label.logo {
 
 nav ul {
     margin: 0;
-    padding: 0;
+    padding-right:100px;
     display: flex;
     list-style: none;
     align-items: center;
@@ -67,6 +67,10 @@ nav ul li a.active, nav ul li a:hover {
 
 .icon {
     font-size: 1.5em;
+    color: white;
+}
+.icon:hover {
+    color: orange;
 }
 
 .icon-bars {
