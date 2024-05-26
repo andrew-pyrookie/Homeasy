@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "category": "Living Room",
+      "name": "Geometric Round Wall Flower vase",
+      "price": "Ksh 2,000.00",
+      "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/24/2590771/1.jpg?3701"
+    },
+    {
+      "id": 2,
+      "category": "Home Office",
+      "name": "Earth Globe Delicate Practical Mini Artificial",
+      "price": "KSh 614.00",
+      "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/52/892915/1.jpg?8727"
+    },
+    {
+      "id": 3,
+      "category": "Living Room",
+      "name": "Scandinavian-inspired Chandeliers.",
+      "price": "KSh 7,920.00",
+      "originalPrice": "KSh 10,920.00",
+      "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/0225091/1.jpg?6362",
+      "sale": true
+    },
+    {
+      "id": 4,
+      "category": "Table",
+      "name": "Coffee Table with Hidden Compartment and Storage Shelf",
+      "price": "KSh 8,600.00",
+      "image": "https://m.media-amazon.com/images/I/615Z4owp4UL._AC_SL1500_.jpg"
+    },
+    {
+        "id": 5,
+        "category": "Living Room",
+        "name": "Scandinavian-inspired Chandeliers.",
+        "price": "KSh 7,920.00",
+        "originalPrice": "KSh 10,920.00",
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/0225091/1.jpg?6362",
+        "sale": true
+      },
+      {
+        "id": 6,
+        "category": "Table",
+        "name": "Coffee Table with Hidden Compartment and Storage Shelf",
+        "price": "KSh 8,600.00",
+        "image": "https://m.media-amazon.com/images/I/615Z4owp4UL._AC_SL1500_.jpg"
+      },
+      {
+        "id": 7,
+        "category": "Living Room",
+        "name": "Geometric Round Wall Flower vase",
+        "price": "Ksh 2,000.00",
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/24/2590771/1.jpg?3701"
+      },
+      {
+        "id": 8,
+        "category": "Home Office",
+        "name": "Earth Globe Delicate Practical Mini Artificial",
+        "price": "KSh 614.00",
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/52/892915/1.jpg?8727"
+      },
+      {
+        "id": 9,
+        "category": "Living Room",
+        "name": "Scandinavian-inspired Chandeliers.",
+        "price": "KSh 7,920.00",
+        "originalPrice": "KSh 10,920.00",
+        "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/82/0225091/1.jpg?6362",
+        "sale": true
+      }
+  ]
+  

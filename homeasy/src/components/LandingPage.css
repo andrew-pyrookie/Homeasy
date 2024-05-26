@@ -65,11 +65,11 @@ nav ul li a.active, nav ul li a:hover {
     color: orange;
 }
 
-.icon {
+.icon-basket {
     font-size: 1.5em;
     color: white;
 }
-.icon:hover {
+.icon-basket:hover {
     color: orange;
 }
 

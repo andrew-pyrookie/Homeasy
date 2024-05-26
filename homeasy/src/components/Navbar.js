@@ -42,7 +42,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <TiShoppingCart className='icon' onClick={toggleBasket} />
+            <TiShoppingCart className='icon-basket' onClick={toggleBasket} />
           </li>
         </ul>
       </nav>
