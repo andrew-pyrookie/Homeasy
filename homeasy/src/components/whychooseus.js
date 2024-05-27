@@ -8,22 +8,22 @@ const features = [
   {
     icon: <CiDiscount1 />,
     title: 'Big Discounts',
-    description: 'Integer euismod blandit nunc sit amet sollicitudin. Fusce quis orci viverra, cursus justo.',
+    description: 'Enjoy unbeatable savings on our top-quality home improvement products!',
   },
   {
     icon: <CiDeliveryTruck />,
     title: 'Free Shipping',
-    description: 'Integer euismod blandit nunc sit amet sollicitudin. Fusce quis orci viverra, cursus justo.',
+    description: 'Get your orders delivered to your doorstep at no extra cost.',
   },
   {
     icon: <IoWalletOutline />,
     title: 'Secure Payments',
-    description: 'Integer euismod blandit nunc sit amet sollicitudin. Fusce quis orci viverra, cursus justo.',
+    description: 'Shop with confidence using our safe and secure payment options.',
   },
   {
     icon: <MdLocationSearching />,
     title: 'Order Tracking',
-    description: 'Integer euismod blandit nunc sit amet sollicitudin. Fusce quis orci viverra, cursus justo.',
+    description: 'Easily track your orders from purchase to delivery in real-time.',
   },
 ];
 

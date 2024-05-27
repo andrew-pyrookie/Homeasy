@@ -1,11 +1,15 @@
-/* Contact Us Section */
-.contact-section {
-  padding: 50px 0;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.contact-section h2 {
-  font-size: 2.5rem;
+.contact-section {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 2% 18%;
+}
+
+.contact-h2 {
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
@@ -17,49 +21,89 @@
 
 .contact-info {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
 }
 
-.store-info,
+.store-info {
+  flex: 2;
+  padding-right: 20px;
+  text-align: left;
+}
+
 .contact-details {
   flex: 1;
-  text-align: left;
-  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.store-info h4,
-.contact-details h4 {
-  font-size: 1.2rem;
+.store-info h4 {
+  font-size: 1.4rem;
+  color: #F4C542;
   margin-bottom: 10px;
 }
 
-.store-info p,
-.contact-details p {
+.store-info p {
   color: #666;
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .social-icons a {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: 10px;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #f39c12; /* Change this color to match your theme */
+  color: #f39c12;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item .icon {
+  color: #f39c12;
+  font-size: 1.5rem;
+}
+
+.contact-details h4 {
+  font-size: 1.4rem;
+  color: #F4C542;
+  margin-bottom: 5px;
+}
+
+.contact-details p,
+.contact-details a {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .contact-details a {
-  color: #333;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .contact-details a:hover {
-  color: #f39c12; /* Change this color to match your theme */
+  color: #f39c12;
 }
 
 .map-and-form {

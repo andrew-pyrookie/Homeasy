@@ -33,7 +33,7 @@ function Footer(){
                 </div>
                 <div class="social">
                     <h3>Stay In Touch</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Subscribe for updates, exclusive offers, and home improvement tips. Follow us on social media for the latest from Homeasy.</p>
                     <div class="social-icons">
                         <a href="#"><FaFacebook /></a>
                         <a href="#"><FaInstagram /></a>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
+import Footer from './footer';
 import './shop.css';
 import { IoIosOptions } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
@@ -63,6 +64,7 @@ function Shop() {
           )}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const SalesBanner = () => {
             <div className="banner-content">
                 <h1>Sales up to 50% OFF</h1>
                 <p>
-                    Molestie amet tempor, diam id magna ridiculus tincidunt cursus curabitur non ipsum mattis in vel venenatis nam enim facilisis mi, egestas metus, nunc at.
+                Transform your home with our exclusive deals! Don’t miss out on stylish upgrades at unbeatable prices.
                 </p>
                 <button className="shop-button">SHOP NOW</button>
             </div>

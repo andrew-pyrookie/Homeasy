@@ -3,14 +3,14 @@ import './Testimonials.css';
 
 const testimonials = [
   {
-    name: 'Anna Cynthia',
-    image: require('./Assets/Anna.webp'), // Corrected image path
-    text: 'Enim, interdum vulputate netus quis sapien malesuada neque, nec enim at urna gravida accumsan nunc, mi eu id ullamcorper amet commodo pulvinar tortor, augue donec placerat.',
+    name: 'Sarah K.',
+    image: require('./Assets/Anna.webp'), // Adjust path if necessary
+    text: '"From the moment I installed Homeasy\'s dust-blocking doormats, my home has stayed cleaner than ever. Their products are not just beautiful, but also incredibly functional. I couldn\'t be happier!"',
   },
   {
-    name: 'Jim Taylor',
-    image: require('./Assets/jim.webp'), // Corrected image path
-    text: 'Porttitor diam porta eu, id et vestibulum quam vestibulum facilisis nulla ornare eu pretium dictum quam pharetra, nisl maecenas pretium sed eget interdum auctor et, aliquam sem lectus.',
+    name: 'David M.',
+    image: require('./Assets/jim.webp'), // Adjust path if necessary
+    text: '"Homeasy has completely transformed my living space. The fancy pipes and special lights have added a touch of elegance that I never knew was possible. The quality is exceptional!"',
   },
 ];
 
