@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,20 +36,23 @@ AUTH_USER_MODEL = 'users.CustomUser'
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'rest_framework',  # Make sure this is listed only once
+    'rest_framework_simplejwt',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'corsheaders',
     'products',
     'orders',
     'users',
     'payments',
     'notifications',
+    'admin_api',
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -55,9 +60,20 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware', 
+    'corsheaders.middleware.CorsMiddleware',
+]
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+# Path to your React build directory
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'build/static'),
 ]
 
+# Location where Django will store collected static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Enable serving static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -66,9 +82,16 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 }
 
+MPESA_ENV = 'sandbox'
+MPESA_CONSUMER_KEY = 'GxQ6v0MyGXd6Yq3jUQyMtU5FBVbKLNhLWNFcSH11o96XWTES'
+MPESA_CONSUMER_SECRET = 'pUdGHRA157t9SuBarvHOvKztkbmbhhrSXerbK81HDgi8c8dQw6pDC0mC3rN69EOS'
+MPESA_SHORTCODE = '174379'  # Sandbox short code
+MPESA_PASSKEY = 'bfb279f9aa9bdbcf158e97dd71a467cd2bcd2d06ed5d6fb21e38aa19dc8994a1'  # Sandbox passkey
+MPESA_CALLBACK_URL = 'https://yourdomain.com/api/payments/confirmation/'  # Adjust this URL as needed
 
 CORS_ORIGIN_ALLOW_ALL = True  # Only for development, set appropriate CORS settings for production
 
@@ -144,3 +167,20 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'ROTATE_REFRESH_TOKENS': False,
+    'BLACKLIST_AFTER_ROTATION': True,
+    'ALGORITHM': 'HS256',
+    'SIGNING_KEY': SECRET_KEY,
+    'VERIFYING_KEY': None,
+    'AUTH_HEADER_TYPES': ('Bearer',),
+    'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
+    'USER_ID_FIELD': 'id',
+    'USER_ID_CLAIM': 'user_id',
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+    'TOKEN_TYPE_CLAIM': 'token_type',
+    'JTI_CLAIM': 'jti',
+}
