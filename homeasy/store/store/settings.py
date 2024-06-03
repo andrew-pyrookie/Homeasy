@@ -97,6 +97,12 @@ CORS_ORIGIN_ALLOW_ALL = True  # Only for development, set appropriate CORS setti
 
 ROOT_URLCONF = 'store.urls'
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    # Add your other frontend URLs here
+]
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

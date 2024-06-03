@@ -1,144 +1,143 @@
-.authform {
-    background:url('./Assets/background.jpg') no-repeat ;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-  
-  }
-  
-  .container {
-    background-color: transparent;
-    color: rgba(255, 165, 0, 0.5);
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(30px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center contents vertically */
-    align-items: center; /* Center contents horizontally */
-    border: 2px solid rgba(255, 165, 0, 0.5);;
-  }
-  h1 {
-    text-decoration: underline;
-  }
-  
-  .input-container {
-    margin-bottom: 20px; /* Adjust spacing between input containers */
-    position: relative;
-  }
-  
-  .input-container input {
-    width: 100%; /* Make input fill the width of the container */
-    padding-right: 30px;
-    border: 1px solid rgba(255, 165, 0, 0.5);;
-    border-radius: 10px;
-    padding: 10px;
-    outline: none;
-    font-size: 12px;
-  }
-  
-  .input-container .icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-  }
-  
-  .centered-text {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .vertical-buttons  {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  button {
-    border-radius: 10px;
-    width: 250px;
-    height: 30px;
-    box-shadow: none;
-    border: none;
-  }
-  
-  .google-button {
-    background-color: white;
-    margin-bottom: 20px;
-  }
-  .google-button:hover {
-    cursor: pointer;
-    transform: translateY(-5px); /* Move the button up 5px */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  }
-  
-  .facebook-button {
-    background-color: #1877F2;
-    color: white;
-    border: none;
-  }
-  .facebook-button:hover {
-    cursor: pointer;
-    transform: translateY(-5px); /* Move the button up 5px */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  }
-  
-  .login-button {
-    color: white;
-    background-color: rgba(255, 165, 0, 0.5);;
-    font-weight: bold;
-  }
-  
-  .login-button:hover {
-    cursor: pointer;
-    transform: translateY(-5px); /* Move the button up 5px */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  }
-  
-  a {
-    color: rgba(255, 165, 0, 0.5);;
-    font-weight: bold;
-  }
-  
-  .centered-text {
-    text-align: center;
-  }
-  
-  .centered-text h5 {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .centered-text h5 span {
-    position: relative;
-  }
-  
-  .centered-text h5 .left::before,
-  .centered-text h5 .right::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    height: 1px;
-    width: 50px; /* Adjust width as needed */
-    background-color: rgba(255, 165, 0, 0.5);; /* Adjust color as needed */
-  }
-  
-  .centered-text h5 .left::before {
-    left: -60px; /* Adjust position as needed */
-  }
-  
-  .centered-text h5 .right::before {
-    right: -60px; /* Adjust position as needed */
-  }
-  
-  .agreeTerms {
-    font-size: small;
-    margin-bottom: 100px;
-  }
+/* Add this class to the body in your login and register components */
+body.register-login {
+  background: url('./Assets/background.jpg') no-repeat;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.register-login-container {
+  background-color: transparent;
+  color: rgba(255, 165, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center contents vertically */
+  align-items: center; /* Center contents horizontally */
+  border: 2px solid rgba(255, 165, 0, 0.5);
+}
+
+.register-login-container h1 {
+  text-decoration: underline;
+}
+
+.register-login-input-container {
+  margin-bottom: 20px; /* Adjust spacing between input containers */
+  position: relative;
+}
+
+.register-login-input-container input {
+  width: 100%; /* Make input fill the width of the container */
+  padding-right: 30px;
+  border: 1px solid rgba(255, 165, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  font-size: 12px;
+}
+
+.register-login-input-container .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.register-login-centered-text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-login-vertical-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-login-button {
+  border-radius: 10px;
+  width: 250px;
+  height: 30px;
+  box-shadow: none;
+  border: none;
+}
+
+.register-login-google-button {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.register-login-google-button:hover {
+  cursor: pointer;
+  transform: translateY(-5px); /* Move the button up 5px */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.register-login-facebook-button {
+  background-color: #1877F2;
+  color: white;
+  border: none;
+}
+
+.register-login-facebook-button:hover {
+  cursor: pointer;
+  transform: translateY(-5px); /* Move the button up 5px */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.register-login-login-button {
+  color: white;
+  background-color: rgba(255, 165, 0, 0.5);
+  font-weight: bold;
+}
+
+.register-login-login-button:hover {
+  cursor: pointer;
+  transform: translateY(-5px); /* Move the button up 5px */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.register-login a {
+  color: rgba(255, 165, 0, 0.5);
+  font-weight: bold;
+}
+
+.register-login-centered-text h5 {
+  position: relative;
+  display: inline-block;
+}
+
+.register-login-centered-text h5 span {
+  position: relative;
+}
+
+.register-login-centered-text h5 .left::before,
+.register-login-centered-text h5 .right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  height: 1px;
+  width: 50px; /* Adjust width as needed */
+  background-color: rgba(255, 165, 0, 0.5); /* Adjust color as needed */
+}
+
+.register-login-centered-text h5 .left::before {
+  left: -60px; /* Adjust position as needed */
+}
+
+.register-login-centered-text h5 .right::before {
+  right: -60px; /* Adjust position as needed */
+}
+
+.register-login-agreeTerms {
+  font-size: small;
+  margin-bottom: 100px;
+}

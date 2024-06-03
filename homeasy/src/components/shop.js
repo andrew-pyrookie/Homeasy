@@ -1,9 +1,11 @@
+// Shop.js
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './footer';
 import './shop.css';
 import { IoIosOptions } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa6";
+import apiClient from '../apiClient';
 
 function Shop() {
   const [shopProducts, setShopProducts] = useState([]);
@@ -11,18 +13,17 @@ function Shop() {
 
   useEffect(() => {
     console.log('Fetching shop products...');
-    fetch('/shop_products.json') // Adjust the path to your JSON file for shop products
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log('Fetched products:', data);
-        setShopProducts(data);
-      })
-      .catch(error => console.error('There has been a problem with your fetch operation:', error));
+    const fetchShopProducts = async () => {
+      try {
+        const response = await apiClient.get('/products/');
+        console.log('Fetched products:', response.data);
+        setShopProducts(response.data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchShopProducts();
   }, []);
 
   const sortBy = (criteria, label) => {
@@ -64,7 +65,7 @@ function Shop() {
           )}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
